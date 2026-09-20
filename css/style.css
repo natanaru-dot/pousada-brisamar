@@ -142,7 +142,7 @@
     display:flex; align-items:flex-end;
     padding: 0;
     background: linear-gradient(180deg, rgba(20,63,69,.25), rgba(20,63,69,.75)),
-                url('https://picsum.photos/seed/brisamar-hero/1600/1200') center/cover no-repeat;
+                url('../images/fachada-brisamar.jpg') center/cover no-repeat;
   }
   .hero-inner{
     width:100%;

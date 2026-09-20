@@ -17,16 +17,19 @@ const nav = document.getElementById('siteNav');
   // por exemplo: 'images/apto-01.jpg', 'images/apto-02.jpg' ...
   const galleries = {
     apartamento: [
-      'https://picsum.photos/seed/brisamar-apto-1/1200/900',
-      'https://picsum.photos/seed/brisamar-apto-2/1200/900',
-      'https://picsum.photos/seed/brisamar-apto-3/1200/900',
-      'https://picsum.photos/seed/brisamar-apto-4/1200/900',
-    ],
-    camping: [
-    'https://picsum.photos/seed/beiradpraia-1/1200/900',
-    'https://picsum.photos/seed/beiradpraia-2/1200/900',
-    'https://picsum.photos/seed/beiradpraia-3/1200/900',
-  ],
+  'images/fachada-brisamar.jpg',
+  'images/quarto-dossel.jpg',
+  'images/quarto-parede-azul-01.jpg',
+  'images/quarto-parede-azul-02.jpg',
+  'images/quarto-parede-azul-detalhe.jpg',
+  'images/quarto-bege.jpg',
+  'images/quarto-solteiro-duplo.jpg',
+  'images/quarto-beliche.jpg',
+  'images/quarto-rosa.jpg',
+  'images/quarto-toalhas.jpg',
+  'images/sala-sofa.jpg',
+  'images/cozinha.jpg',
+],
   };
 
   const lightbox = document.getElementById('lightbox');
