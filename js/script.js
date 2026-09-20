@@ -79,6 +79,28 @@ const nav = document.getElementById('siteNav');
   document.getElementById('lightboxPrev').addEventListener('click', showPrev);
   document.getElementById('lightboxNext').addEventListener('click', showNext);
 
+  // swipe no celular: arrasta o dedo pra esquerda/direita pra trocar de foto
+let touchStartX = 0;
+let touchStartY = 0;
+
+lightbox.addEventListener('touchstart', (e)=>{
+  touchStartX = e.changedTouches[0].clientX;
+  touchStartY = e.changedTouches[0].clientY;
+}, { passive: true });
+
+lightbox.addEventListener('touchend', (e)=>{
+  const touchEndX = e.changedTouches[0].clientX;
+  const touchEndY = e.changedTouches[0].clientY;
+  const diffX = touchEndX - touchStartX;
+  const diffY = touchEndY - touchStartY;
+
+  // só conta como swipe se o movimento horizontal for bem maior que o vertical
+  // (evita confundir com um scroll acidental pra cima/baixo)
+  if (Math.abs(diffX) > 50 && Math.abs(diffX) > Math.abs(diffY)) {
+    if (diffX < 0) { showNext(); } else { showPrev(); }
+  }
+}, { passive: true });
+
   // fecha clicando fora da imagem
   lightbox.addEventListener('click', (e)=>{
     if(e.target === lightbox) closeLightbox();
