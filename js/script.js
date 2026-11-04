@@ -29,6 +29,19 @@ const nav = document.getElementById('siteNav');
   'images/quarto-toalhas.jpg',
   'images/sala-sofa.jpg',
   'images/cozinha.jpg',
+  
+    ],
+    camping: [
+  'images/salao.jpg',
+  'images/areaexterna.jpg',
+  'images/salao2.jpg',
+  'images/frente.jpg',
+  'images/salao3.jpg',
+  'images/frente2.jpg',
+  'images/salao4.jpg',
+  'images/salao5.jpg',
+  'images/cabanas.jpg',
+  'images/frente3.jpg',
 ],
   };
 
