@@ -42,6 +42,15 @@ const nav = document.getElementById('siteNav');
   'images/salao5.jpg',
   'images/cabanas.jpg',
   'images/frente3.jpg',
+  'images/espaço.jpg',
+  'images/espaço2.jpg',
+  'images/espaço3.jpg',
+  'images/espaço4.jpg',
+  'images/espaço6.jpg',
+  'images/espaço7.jpg',
+  'images/espaço8.jpg',
+  'images/espaço9.jpg',
+  'images/espaço10.jpg',
 ],
   };
 
